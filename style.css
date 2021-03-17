@@ -1,0 +1,98 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+}
+
+.wrapper {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #136a8a;
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #267871, #136a8a);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #267871, #136a8a);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+.item {
+    background: linear-gradient(to left, rgba(244, 107, 69, 0.3), rgba(238, 168, 73, 0.4));
+    padding: 40px 30px;
+    text-align: center;
+    border-radius: 5px;
+    min-height: 30vh;
+}
+
+input {
+    border: none;
+    outline: none;
+    width: 100%;
+    padding: 7px 10px;
+    border-radius: 3px;
+    background: transparent;
+    border: 1px solid #333;
+    color: rgba(255, 255, 255, 0.5);
+    font-size: 22px;
+    text-transform: uppercase;
+}
+
+input:focus {
+    color: rgba(255, 255, 255, 0.9);
+}
+
+
+
+.display {
+    margin-top: 40px;
+}
+
+.day,
+.hour,
+.sec {
+    background: linear-gradient(to right, #606c88, #3f4c6b);
+    color: #fff;
+    font-size: 35px;
+    border-radius: 5px;
+    padding: 15px 10px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: 300;
+}
+
+span {
+    margin-right: 10px;
+}
+
+
+/* ===========================================================
+                    responsive codes
+==============================================================*/
+@media (max-width:1040px) {
+
+    .day,
+    .hour,
+    .sec {
+        font-size: 25px;
+
+    }
+}
+
+@media (max-width:768px) {
+
+    .day,
+    .hour,
+    .sec {
+        font-size: 25px;
+        border-radius: 0;
+    }
+}
